@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Secondarybutton from './SecondaryButton';
-import phone from '../img/phone.svg';
+import phone from '../img/phone.png';
 import ring1 from '../img/ring_orange.svg';
 import message1 from '../img/message_pink.svg';
 import message2 from '../img/message_blue.svg';
@@ -11,24 +10,27 @@ function HeaderContent() {
     return (
         <HeaderContentStyled>
             <Fade left cascade>
-            <div className="left-content">
-                <div className="left-text-container">
-                    <h1>Smart banking for freelancers</h1>
-                    <p className="white">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit molestiae minus dicta ipsum atque est qui vel illo magni voluptates esse, e
-                        x commodi corporis quos odio libero temporibus, eveniet nisi.
-                    </p>
-                    <Secondarybutton name={'Register Now'}/>
+                <div className="left-content">
+                    <div className="left-text-container">
+                        <h1>Coming Soon!</h1>
+                        <p className="white">
+                            Are you ready to WIN?
+                            Because the winner's season is here!
+                            <br />
+                            <br />
+                            WinLudo - A realtime multiplayer Ludo game that let's you win real cash!
+                            Stay tuned for more updates.
+                        </p>
+                    </div>
                 </div>
-            </div>
             </Fade>
             <Fade right>
-            <div className="right-content">
-                <img src={phone} alt="" className="phone" />
-                <img src={ring1} alt="" className="ring1" />
-                <img src={message1} alt="" className="message1" />
-                <img src={message2} alt="" className="message2" />
-            </div>
+                <div className="right-content">
+                    <img src={phone} alt="" className="phone" />
+                    <img src={ring1} alt="" className="ring1" />
+                    <img src={message1} alt="" className="message1" />
+                    <img src={message2} alt="" className="message2" />
+                </div>
             </Fade>
         </HeaderContentStyled>
     )
@@ -71,8 +73,8 @@ const HeaderContentStyled = styled.div`
         }
         .ring1{
             position: absolute;
-            bottom: 10%;
-            right: 0;
+            bottom: 5%;
+            right: -5%;
             left: auto;
             animation: move2 20s infinite;
             transition: all .4s ease-in-out;
@@ -80,15 +82,15 @@ const HeaderContentStyled = styled.div`
         .message1{
             position: absolute;
             top: 0;
-            right: 0;
+            right: -10%;
             left: auto;
             animation: move 5s infinite;
             transition: all .4s ease-in-out;
         }
         .message2{
             position: absolute;
-            bottom: 15%;
-            left: 0;
+            bottom: 5%;
+            left: -15%;
             transition: all .4s ease-in-out;
             animation: move 8s infinite;
             animation-delay: .5s;
